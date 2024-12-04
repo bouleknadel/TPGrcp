@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_dark"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <!-- Titre -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertisseur de Devises"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Montant -->
+    <EditText
+        android:id="@+id/et_montant"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edit_text_dark"
+        android:hint="Montant"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint_text_dark"
+        android:layout_marginBottom="24dp"
+        android:gravity="center" />
+
+    <!-- De -->
+    <EditText
+        android:id="@+id/et_devise_source"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edit_text_dark"
+        android:hint="De (ex: EUR)"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint_text_dark"
+        android:layout_marginBottom="24dp"
+        android:gravity="center" />
+
+    <!-- Vers -->
+    <EditText
+        android:id="@+id/et_devise_cible"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edit_text_dark"
+        android:hint="Vers (ex: USD)"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint_text_dark"
+        android:layout_marginBottom="40dp"
+        android:gravity="center" />
+
+    <!-- Bouton Convertir -->
+    <Button
+        android:id="@+id/btn_convertir"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_button_dark"
+        android:padding="16dp"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center" />
+
+    <!-- Résultat -->
+    <TextView
+        android:id="@+id/tv_resultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/result_background_dark"
+        android:padding="24dp"
+        android:text="Montant converti: "
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+</LinearLayout>
